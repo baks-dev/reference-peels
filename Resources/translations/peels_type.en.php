@@ -1,8 +1,6 @@
 <?php
 
 return [
-    'placeholder' => 'Choose a size caps ...',
-    'label' => 'Size Peel',
-
-
+    'placeholder' => 'Choose a breakfast method ...',
+    'label' => 'The method of separation',
 ];
