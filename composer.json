@@ -1,7 +1,7 @@
 {
-  "name": "baks-dev/reference-peel",
+  "name": "baks-dev/reference-peels",
   "description": "Библиотека размеров головных уборов",
-  "homepage": "https://github.com/baks-dev/reference-peel",
+  "homepage": "https://github.com/baks-dev/reference-peels",
   "keywords": [
     "bundle",
     "symfony",
