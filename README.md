@@ -9,7 +9,7 @@
 ## Установка
 
 ``` bash
-$ composer require baks-dev/reference-peels
+composer require baks-dev/reference-peels
 ```
 
 ## Лицензия ![License](https://img.shields.io/badge/MIT-green)
