@@ -1,6 +1,6 @@
 <?php
 /*
- *  Copyright 2023.  Baks.dev <admin@baks.dev>
+ *  Copyright 2025.  Baks.dev <admin@baks.dev>
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
  *  of this software and associated documentation files (the "Software"), to deal
@@ -27,26 +27,25 @@ namespace BaksDev\Reference\Peel\Choice;
 
 use BaksDev\Core\Services\Fields\FieldsChoiceInterface;
 use BaksDev\Core\Services\Reference\ReferenceChoiceInterface;
-use BaksDev\Reference\Peel\Form\ChoiceSizePeelFieldForm;
-use BaksDev\Reference\Peel\Type\SizePeel;
+use BaksDev\Reference\Peel\Form\ChoicePeelsFieldForm;
+use BaksDev\Reference\Peel\Type\Peel;
 
 final class ReferenceChoicePeel implements FieldsChoiceInterface, ReferenceChoiceInterface
 {
     public function equals($key): bool
     {
-        return $key === SizePeel::TYPE;
+        return $key === Peel::TYPE;
     }
-
 
     public function type(): string
     {
-        return SizePeel::TYPE;
+        return Peel::TYPE;
     }
 
     /** Возвращает класс поля */
     public function class(): string
     {
-        return SizePeel::class;
+        return Peel::class;
     }
 
     public function domain(): string
@@ -58,7 +57,7 @@ final class ReferenceChoicePeel implements FieldsChoiceInterface, ReferenceChoic
     /** Возвращает класс формы для рендера */
     public function form(): string
     {
-        return ChoiceSizePeelFieldForm::class;
+        return ChoicePeelsFieldForm::class;
     }
 
     public function constraints(): ?array

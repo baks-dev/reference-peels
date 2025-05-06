@@ -25,7 +25,6 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
 use BaksDev\Reference\Peel\BaksDevReferencePeelBundle;
 use BaksDev\Reference\Peel\Choice\ReferenceChoicePeel;
-use BaksDev\Reference\Peel\Choice\ReferenceChoiceSizePeel;
 
 return static function(ContainerConfigurator $configurator) {
 
