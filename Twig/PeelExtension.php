@@ -44,11 +44,11 @@ final class PeelExtension extends AbstractExtension
 
         try
         {
-            return $twig->render('@Template/SizePeel/content.html.twig', ['value' => $value]);
+            return $twig->render('@Template/reference-peel/content.html.twig', ['value' => $value]);
         }
         catch(LoaderError $loaderError)
         {
-            return $twig->render('@SizePeel/content.html.twig', ['value' => $value]);
+            return $twig->render('@reference-peel/content.html.twig', ['value' => $value]);
         }
     }
 
@@ -60,11 +60,11 @@ final class PeelExtension extends AbstractExtension
 
         try
         {
-            return $twig->render('@Template/SizePeel/template.html.twig', ['value' => $value]);
+            return $twig->render('@Template/reference-peel/template.html.twig', ['value' => $value]);
         }
         catch(LoaderError $loaderError)
         {
-            return $twig->render('@SizePeel/template.html.twig', ['value' => $value]);
+            return $twig->render('@reference-peel/template.html.twig', ['value' => $value]);
         }
     }
 }
